@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joseph.mymovieapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avengers"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <TextView
+        android:id="@+id/mappNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_type_text_view"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@+id/search_type_text_view"
+        android:layout_toRightOf="@+id/search_type_text_view"
+        android:text="Movie App"
+        android:textColor="@android:color/background_light"
+        android:textSize="@android:dimen/app_icon_size"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_radio_group"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="78dp"
+        android:text="@string/search"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@color/colorPrimaryDark" />
+
+
+    <RadioGroup
+        android:id="@+id/search_radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="197dp" >
+
+        <RadioButton
+            android:id="@+id/movie_search_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/movies"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/people_search_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/people"
+            android:textColor="@android:color/background_light" />
+    </RadioGroup>
+
+    <TextView
+    android:id="@+id/search_type_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#ffffff"
+    />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/search_edit_text"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/search"
+        android:textColor="@android:color/background_light" />
+
+
+
+</RelativeLayout>
